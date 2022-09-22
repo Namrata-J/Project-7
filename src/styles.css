@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0, 0, 0);
+}
+
+.bg-image {
+  bottom: 0;
+  height: 60vh;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+h1,
+p {
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+h1 span {
+  color: rgb(87, 127, 196);
+  font-size: 1.5rem;
+}
+
+.App > p {
+  color: rgb(140, 151, 169);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.genres-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+li {
+  color: rgb(87, 127, 196);
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.genres-container li {
+  border: 1px solid rgb(87, 127, 196);
+  border-radius: 0.3rem;
+}
+
+.genres-container li:hover {
+  background: rgba(44, 62, 167, 0.3);
+}
+
+hr {
+  margin: 0rem 1rem;
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.list-container li {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.5);
+  color: rgb(87, 127, 196);
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 590px) {
+  .bg-image {
+    height: 50vh;
+  }
+
+  .App > p,
+  li {
+    font-size: 0.8rem;
+  }
+
+  .App > p {
+    padding: 0rem 0.5rem;
+  }
+
+  .genres-container {
+    gap: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .bg-image {
+    height: 40vh;
+  }
+}
